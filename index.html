@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="index.js"></script>
+    <b>
+        1. Create one function with zero parameter having a console statement;
+    </b>
+    <pre>
+        function abc(){
+            console.log("hello");
+        }
+        abc();
+        
+
+        OUTPUT:- hello
+    </pre>
+
+    <b>
+        2. Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"
+    </b>
+
+    <pre>
+        var a = 3;
+    b = 4;
+    c = a + b;
+    function abc(){
+        console.log("Sum of " +a+ ", " +b+ " is " +c)
+    }
+    abc();
+
+    OUTPUT:- Sum of 3, 4 is 7
+    </pre>
+
+    <b>
+        3. Create one arrow function
+    </b>
+    <pre>
+        var  sum = 0;
+        const number = (x,y) => {
+            console.log(x + y);
+        };
+        sum = number(1,2);
+        console.log(sum);
+
+        OUTPUT:- 3
+    </pre>
+
+    <b>
+        4. Print output: </b>
+        <pre>
+            var x = 21;
+            var girl = function () {
+                console.log(x);
+                var x = 20;
+            };
+            girl ();
+
+            OUTPUT:- undefned
+        </pre>
+
+        <b>
+            5.Print Output:
+
+        </b>
+        <pre>
+            
+var x = 21;
+girl ();
+console.log(x)
+function girl() {
+    console.log(x);
+    var x = 20;
+};
+
+OUTPUT:- undefined
+         21
+
+        </pre>
+<b>
+    6. print output:
+</b>    
+<pre>
+var x = 21;
+a();
+b();
+
+  function a() {
+    
+  var x = 20;
+  console.log(x);
+};
+ function b() {
+    
+   var x = 40;
+   console.log(x);
+};
+
+OUTPUT:- 20
+         40
+</pre>
+<b>
+    7. Write a function that accepts parameter n and returns factorial of n
+</b>
+
+<pre>
+    function fact(n){
+        let ans = 1;
+        if(n == 0 || n == 1){
+            return ans;
+        }
+        else{
+            for(var i = n; i >=1; i--){
+                ans = ans * i;
+            }
+            return ans;
+        }
+    }
+    let n = 4;
+    ans = fact();
+    console.log("factorial of " +n+ " is " +ans);
+
+    OUTPUT:- factorial of 4 is 1
+</pre>
+</body>
+</html>
